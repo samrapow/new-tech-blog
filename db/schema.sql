@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS sam_blog_db;
+CREATE DATABASE sam_blog_db;
