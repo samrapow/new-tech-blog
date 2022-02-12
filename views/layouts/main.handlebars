@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | New Tech Blog</title>
+</head>
+<body>
+      <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/header">Header</a></li>
+      {{#unless loggedIn}}
+      <li><a href="/login">Login</a></li>
+      {{/unless}}
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1><a href="/">New Tech Blog</a></h1>
+  </header>
+
+  <main>
+    {{{body}}}
+  </main>
+</body>
+</html>
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
